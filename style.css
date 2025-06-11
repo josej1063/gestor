@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --white: #fff;
+    --purple: #6c63ff;
+    --blue-dark: #23272f;
+    --green: #00b894;
+    --bleu-linght: #74b9ff;
+}
+
+body {
+    background: #23272f;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+/*container*/
+
+.container {
+    background: #2d3436;
+    color: #f1f1f1;
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+    margin: 40px auto;
+    width: 350px;
+}
+
+.contenedor {
+    background: linear-gradient(var (--purple), var(--blue-dark));
+    padding: 2rem 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    margin-top: 40px;
+    width: 350px;
+}
+
+/*perfil*/
+.perfil h1{
+    color: #f1f1f1;
+}
+.perfil span{
+    color: #f1f1f1;
+    letter-spacing: 1px;
+}
+#fecha{
+    color: #f1f1f1;
+    padding: 50px 0 5px 0;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/*agregar tarea*/
+
+.agregar-tarea {
+    background-color: var(--white);
+    border-radius: 14px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 6px;
+    gap: 10px;
+}
+
+.agregar-tarea input {
+    width: 100%;
+    height: 20px;
+    border: none;
+    background-color: #ffffff;
+    border-radius: 10px 0 0 10px;
+    font-size: 0.9rem;
+    padding: 0 6px;
+}
+
+.agregar-tarea i {
+    font-size: 24px;
+    color: var(--purple);
+    margin-left: 6px;
+}
+
+.agregar-tarea i:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.agregar-tarea input::placeholder{
+    color: #b2bec3;
+}
+
+/*seccion de tareas*/
+
+.seccion-tarea h3{
+    color: #f1f1f1;
+    margin-bottom: 20px;
+}
+
+.seccion-tarea li{
+    display: flex;
+    background: linear-gradient(to bottom,var(--blue-dark),var(--green));
+    border-radius: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+    color: var(--white);
+}
+
+.seccion-tarea i{
+    font-size: 25px;
+}
+
+.seccion-tarea i:hover{
+    color: var(--bleu-linght);
+}
+
+.seccion-tarea > ul p{
+    font-size: 1.2rem;
+}
+
+.line-throungh{
+    text-decoration: line-through;
+    color: var(--bleu-linght);
+}
+
+.input-contenedor {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+#boton-enter {
+    color: #00b894;
+    background: none;
+    font-size: 2rem;
+    margin-left: 8px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#boton-enter:hover {
+    color: #55efc4;
+}
+
+#lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.elemento {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 0.5rem;
+    border-bottom: 1px solid #636e72;
+    font-size: 1rem;
+}
+
+.elemento .co {
+    color: #b2bec3;
+    margin-right: 0.8rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.elemento .text {
+    flex: 1;
+    color: #f1f1f1;
+    margin: 0;
+    word-break: break-word;
+}
+
+.elemento .de {
+    color: #d63031;
+    margin-left: 0.8rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.elemento .co.realizado {
+    color: #00b894;
+}
+
+.elemento .text.tachado {
+    text-decoration: line-through;
+    color: #636e72;
+}

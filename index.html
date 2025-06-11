@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!--esto es el perfil-->
+    <div class="container">
+        <div class="perfil">
+            <div id="fecha"></div>
+            <h1>Hola, Jose Hoyos</h1>
+            <span>Tu gestor de tareas</span>
+        </div>
+
+        <!--esto es el input de texto-->
+        <div class="agregar-tarea">
+            <input type="text" id="input" placeholder="Agregar una nueva tarea...">
+            <i id="boton-enter" class="fas fa-plus-circle"></i>
+        </div>
+
+        <!--esto es la seccion que agrega la tarea en una ul-lista-->
+        <div class="seccion-tarea">
+            <h3>Estas son tus tareas pendientes</h3>
+            <ul id="lista">
+                <!-- Las tareas se agregarán aquí sola -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
